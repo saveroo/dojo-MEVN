@@ -1,4 +1,43 @@
-# mevnexample
+# dojo-MEVN
+
+## Description
+Code Katas, to improve familiarity
+
+
+## Clone the repository
+```
+git clone https://github.com/saveroo/dojo-MEVN.git
+```
+
+## Installing 
+```
+cd dojo-MEVN
+yarn install
+
+cd api
+yarn install
+```
+
+## Starting API server 
+```
+cd api && nodemon src/server.js
+```
+
+## Starting CLIENT 
+```
+yarn serve
+```
+
+## server port
+```
+http://localhost:4000
+```
+
+## client port
+```
+http://localhost:8080
+```
+
 
 ## Project setup
 ```
