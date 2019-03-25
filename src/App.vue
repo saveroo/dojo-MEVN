@@ -1,13 +1,35 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="container">
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <router-link class="nav-link" to="/">Home</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/create">Create</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/posts">Posts</router-link>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <router-view/>
+    <transition name="fade">
+      <router-view/>
+    </transition>
   </div>
 </template>
+<script>
+</script>
+
 <style lang="stylus">
+.fade-enter-active, .fade-leave-active
+  transition opacity .5s
+
+.fade-enter, fade-leave-active
+  opacity 0
+
 #app
   font-family 'Avenir', Helvetica, Arial, sans-serif
   -webkit-font-smoothing antialiased
